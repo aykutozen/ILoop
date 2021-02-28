@@ -1,0 +1,15 @@
+<div class="col-md-12">
+  <div class="card card-secondary">
+    <div class="card-header">
+      <h3 class="card-title">{{model.date}}</h3>
+    </div>
+    <div class="card-body">
+      <activity [model]="model"></activity>
+    </div>
+  </div>
+  <button (click)="updateActivity()" class="btn btn-info btn-sm" > 
+                
+    <i class="fas fa-edit">
+    </i>                        
+</button>
+</div>

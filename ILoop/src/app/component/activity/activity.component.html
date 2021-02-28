@@ -1,0 +1,52 @@
+<div class="form-row">
+    <input type="hidden" #duration="ngModel" [(ngModel)]="model.date" >
+    <div class="form-group col-md-1">       
+        <label>Hour</label>
+        <select   #duration="ngModel" [(ngModel)]="model.duration" class="form-control custom-select">       
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="form-group col-md-5">
+        <label>Descriptrion</label>
+        <textarea  #comment="ngModel" [(ngModel)]="model.comment" id="inputDescription" placeholder="Description" class="form-control" rows="4"></textarea>
+    </div>
+    <div class="form-group col-md-6">
+        <div class="form-group">
+            <label>Activity Type</label>
+            <select  #type="ngModel" [(ngModel)]="model.type" class="form-control custom-select">
+                <option>PS/Analysis</option>
+                <option>PS/Design</option>
+                <option>PS/Development</option>
+                <option>PS/Testing&Test Development</option>
+                <option>PS/Offshore Internal  Testing</option>
+                <option>PS/Deployment</option>
+                <option>PS/UAT Development</option>
+                <option>PS/Documentation</option>
+                <option>PS/Maintenance&Support</option>
+                <option>PS/Project Management</option>
+                <option>PS/Project Meeting</option>
+                <option>PS/Migration&Integration</option>
+                <option>PS/Review Processes</option>
+                <option>PS/Issue Management</option>
+                <option>LO/CodeWalk</option>
+                <option>LO/Project Training</option>
+                <option>LO/Exam</option>
+                <option>LO/Seminar</option>
+                <option>LO/Training</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Project</label>
+            <select #project="ngModel" [(ngModel)]="model.project" class="form-control custom-select">
+                <option>Proje 1</option>
+                <option>Proje 2</option>
+                <option>Proje 3</option>
+                <option>Proje 4</option>
+            </select>
+        </div>
+    </div>
+
+</div>
